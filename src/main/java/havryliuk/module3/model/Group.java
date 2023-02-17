@@ -13,7 +13,7 @@ import java.util.Set;
 @Getter
 @Setter
 @EqualsAndHashCode
-@Entity
+@Entity(name = "class")
 public class Group {
 
     @Id
@@ -24,6 +24,6 @@ public class Group {
     private String name;
 
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @OneToMany(mappedBy = "group", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "group", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Student> students;
 }

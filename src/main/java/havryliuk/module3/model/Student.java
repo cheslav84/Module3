@@ -14,14 +14,15 @@ import java.util.Set;
 @Entity
 public class Student extends Person {
 
-    private Date enteringDate;
+    @Column(name = "entry_date")
+    private Date entryDate;
 
     @ManyToOne
-    @JoinColumn(name = "group_id")
+    @JoinColumn(name = "class_id")
     private Group group;
 
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Grade> grades;
 
 }

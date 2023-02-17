@@ -15,11 +15,12 @@ public class Grade {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
+    private int value;
+
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
-    private int value;
 
     @ManyToOne
     @JoinColumn(name = "student_id")
