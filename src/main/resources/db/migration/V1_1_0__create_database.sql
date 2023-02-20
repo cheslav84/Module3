@@ -1,30 +1,14 @@
 BEGIN;
 
 
-CREATE TABLE IF NOT EXISTS public.class
-(
+CREATE TABLE IF NOT EXISTS public.class (
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
     name character varying(255) COLLATE pg_catalog."default",
-    CONSTRAINT class_pkey PRIMARY KEY (id)
+    CONSTRAINT class_pkey PRIMARY KEY (id),
+    CONSTRAINT constraint_name UNIQUE (name)
 );
 
-CREATE TABLE IF NOT EXISTS public.flyway_schema_history
-(
-    installed_rank integer NOT NULL,
-    version character varying(50) COLLATE pg_catalog."default",
-    description character varying(200) COLLATE pg_catalog."default" NOT NULL,
-    type character varying(20) COLLATE pg_catalog."default" NOT NULL,
-    script character varying(1000) COLLATE pg_catalog."default" NOT NULL,
-    checksum integer,
-    installed_by character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    installed_on timestamp without time zone NOT NULL DEFAULT now(),
-    execution_time integer NOT NULL,
-    success boolean NOT NULL,
-    CONSTRAINT flyway_schema_history_pk PRIMARY KEY (installed_rank)
-);
-
-CREATE TABLE IF NOT EXISTS public.grade
-(
+CREATE TABLE IF NOT EXISTS public.grade (
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
     value integer NOT NULL,
     student_id character varying(255) COLLATE pg_catalog."default",
@@ -32,32 +16,28 @@ CREATE TABLE IF NOT EXISTS public.grade
     CONSTRAINT grade_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.mentor
-(
+CREATE TABLE IF NOT EXISTS public.mentor (
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
     subject_id character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT mentor_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.person
-(
+CREATE TABLE IF NOT EXISTS public.person (
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    age integer NOT NULL,
+    age integer,
     name character varying(255) COLLATE pg_catalog."default",
     surname character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT person_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.student
-(
+CREATE TABLE IF NOT EXISTS public.student (
     entry_date timestamp without time zone,
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
     class_id character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.subject
-(
+CREATE TABLE IF NOT EXISTS public.subject (
     id character varying(255) COLLATE pg_catalog."default" NOT NULL,
     name character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT subject_pkey PRIMARY KEY (id)
