@@ -1,5 +1,6 @@
 package havryliuk.module3.entity;
 
+import havryliuk.module3.util.DateUtil;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -7,13 +8,13 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import java.util.Formatter;
 
 
 @Getter
 @Setter
 @SuperBuilder
 @AllArgsConstructor
-@ToString(callSuper=true)
 @Entity
 public class Mentor extends Person {
 
@@ -25,8 +26,12 @@ public class Mentor extends Person {
         super();
     }
 
-//    @Builder
-//    public Mentor(String id, String name, String surname, int age) {
-//        super(id, name, surname, age);
-//    }
+    @Override
+    public String toString() {
+        return "Mentor's name: " + super.getName()
+                + "; surname: " + super.getSurname()
+                + "; age: " + super.getAge()
+                + "; taught subject: " + subject.getName()
+                + "\n";
+    }
 }

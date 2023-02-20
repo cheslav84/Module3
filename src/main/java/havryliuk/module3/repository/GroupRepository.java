@@ -59,18 +59,18 @@ public class GroupRepository {
 
 
     @SuppressWarnings("unchecked")
-    public Map<String, Double> getGroupsAverageGrade() {
+    public List<GradeDTO> getGroupsAverageGrade() {
         final EntityManager entityManager = HibernateFactoryUtil.getEntityManager();
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Object[]> criteriaQuery = criteriaBuilder.createQuery(Object[].class);
+        CriteriaQuery<GradeDTO> criteriaQuery = criteriaBuilder.createQuery(GradeDTO.class);
         Root<Group> group = criteriaQuery.from(Group.class);
         Join<Object, Object> students = group.join("students", JoinType.INNER);
         Join<Object, Object> grades = students.join("grades", JoinType.INNER);
         Expression<Double> avg = criteriaBuilder.avg(grades.get("value"));
-        criteriaQuery.multiselect(group.get("name"), avg);
-        criteriaQuery.groupBy(group.get("name"));
-        List<Object[]> groupsGrades = entityManager.createQuery(criteriaQuery).getResultList();
-        return (Map<String, Double>) mapResult(groupsGrades);
+        criteriaQuery.multiselect(group.get("id"), group.get("name"), avg);
+        criteriaQuery.groupBy(group.get("id"), group.get("name"));
+        List<GradeDTO> groupsGrades = entityManager.createQuery(criteriaQuery).getResultList();
+        return groupsGrades;
     }
 
     private Map<String, ? extends Number> mapResult(List<Object[]> resultList) {

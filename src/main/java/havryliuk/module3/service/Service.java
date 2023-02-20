@@ -27,10 +27,9 @@ public class Service {
         return groupRepository.getStudentsAmountByGroups();
     }
 
-    public Map<String, Double> getGroupsAverageGrade() {
+    public List<GradeDTO> getGroupsAverageGrade() {
         return groupRepository.getGroupsAverageGrade();
     }
-
 
     public List<Mentor> getMentorsByNameOrSurname(String nameOrSurname) {
         return personRepository.getByNameOrSurname(nameOrSurname);

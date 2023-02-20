@@ -1,11 +1,13 @@
 package havryliuk.module3.DTO;
 
+import havryliuk.module3.util.DateUtil;
 import lombok.*;
 
 import java.util.Date;
+import java.util.Formatter;
 
 @Getter
-@ToString
+
 @AllArgsConstructor
 public class StudentDTO {
     private String id;
@@ -14,4 +16,14 @@ public class StudentDTO {
     private int age;
     private Date entryDate;
     private double averageGrade;
+
+    @Override
+    public String toString() {
+        return "Student's name: " + name
+                + "; surname: " + surname
+                + "; age: " + age
+                + "; date of entry: " + DateUtil.formatDate(entryDate)
+                + "; average grade: " + new Formatter().format("%.2f", averageGrade)
+                + "\n";
+    }
 }

@@ -1,17 +1,20 @@
-import havryliuk.module3.DTO.GradeDTO;
-import havryliuk.module3.DTO.StudentDTO;
 import havryliuk.module3.entity.*;
 import havryliuk.module3.presenter.Actions;
 import havryliuk.module3.presenter.UserInput;
+import havryliuk.module3.presenter.actions.FindMentorsByNameOrSurname;
 import havryliuk.module3.repository.GroupRepository;
 import havryliuk.module3.repository.PersonRepository;
 import havryliuk.module3.repository.SubjectRepository;
 import havryliuk.module3.service.Service;
-import havryliuk.module3.util.DateCreator;
+import havryliuk.module3.util.DateUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
 public class Main {
+    private static final Logger LOG = LoggerFactory.getLogger(FindMentorsByNameOrSurname.class);
+
     public static void main(String[] args) {
 
         SubjectRepository subjectRepository = new SubjectRepository();
@@ -23,7 +26,7 @@ public class Main {
 
 
         String dateString = "2022-02-19";
-        Date entryDate = DateCreator.createDate(dateString);
+        Date entryDate = DateUtil.createDate(dateString);
         String name = "Джоннні";
         String surname = "Депп";
         int age = 35;

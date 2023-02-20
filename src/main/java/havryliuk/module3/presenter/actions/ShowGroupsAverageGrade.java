@@ -1,11 +1,13 @@
 package havryliuk.module3.presenter.actions;
 
+import havryliuk.module3.DTO.GradeDTO;
 import havryliuk.module3.presenter.Action;
 import havryliuk.module3.presenter.UserInput;
 import havryliuk.module3.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Map;
 
 public class ShowGroupsAverageGrade implements Action {
@@ -13,7 +15,7 @@ public class ShowGroupsAverageGrade implements Action {
 
     @Override
     public void execute(Service service) {
-        Map<String, Double> groupsAverageGrade = service.getGroupsAverageGrade();
+        List<GradeDTO> groupsAverageGrade = service.getGroupsAverageGrade();
         if (groupsAverageGrade.size() > 1) {
             LOG.info("\nThere are following average grades of groups: \n{}", groupsAverageGrade);
         } else {

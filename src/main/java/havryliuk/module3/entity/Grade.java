@@ -9,13 +9,11 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@ToString
 @Entity
 public class Grade implements UniversityEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    @ToString.Exclude
     private String id;
 
     private int value;

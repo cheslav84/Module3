@@ -16,8 +16,8 @@
             <property name="javax.persistence.jdbc.password" value="1111" />
 <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop" />-->
             <property name="hibernate.hbm2ddl.auto" value="validate" />
-            <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="true" />
+<!--            <property name="hibernate.show_sql" value="true" />-->
+<!--            <property name="hibernate.format_sql" value="true" />-->
         </properties>
     </persistence-unit>
 </persistence>
