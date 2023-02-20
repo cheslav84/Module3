@@ -1,8 +1,6 @@
 package havryliuk.module3.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -10,6 +8,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
+@Builder
+@AllArgsConstructor
 public class Grade implements UniversityEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "UUID")
@@ -18,7 +18,7 @@ public class Grade implements UniversityEntity {
 
     private int value;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "subject_id")
     private Subject subject;
 

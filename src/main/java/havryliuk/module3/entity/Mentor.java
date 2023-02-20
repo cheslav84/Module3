@@ -1,6 +1,5 @@
 package havryliuk.module3.entity;
 
-import havryliuk.module3.util.DateUtil;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -8,7 +7,6 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-import java.util.Formatter;
 
 
 @Getter
