@@ -3,6 +3,7 @@ package havryliuk.module3.presenter;
 import havryliuk.module3.entity.Group;
 import havryliuk.module3.service.Service;
 import havryliuk.module3.util.DateUtil;
+import havryliuk.module3.util.Validator;
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -11,12 +12,13 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
 public class UserInput {
     private static final Logger LOG = LoggerFactory.getLogger(UserInput.class);
+    private static final String NAME_PATTERN = "^[A-Za-zА-ЯІЇЄҐа-яіїґє'-]{2,24}$";
+    private static final String DATE_PATTERN = "^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$";
 
     private static final BufferedReader READER =
             new BufferedReader(new InputStreamReader(System.in));
@@ -38,7 +40,6 @@ public class UserInput {
         return userChoice;
     }
 
-
     public static void subMenu(Action action, Service service) {
         String[] menu = {"Try again", "Main menu", "Exit"};
         final int userChoice = UserInput.menu(menu);
@@ -58,8 +59,6 @@ public class UserInput {
         }
     }
 
-
-
     public static Group groupChoosingMenu(List<Group> groups) {
         LOG.info("\nChoose a group for the student:");
         String[] menu = new String[groups.size()];
@@ -74,7 +73,18 @@ public class UserInput {
         return groups.get(userChoice);
     }
 
+    public static String readName(String nameOrSurname) {
+        LOG.info("\nEnter a {} of the student:", nameOrSurname);
+        String name = UserInput.readString();
+        while (Validator.isNotValid(name, NAME_PATTERN)) {
+            LOG.info("\nData should be from 2 to 24 letters long, and contains only letters and signs ' and -");
+            name = UserInput.readString();
+        }
+        return name;
+    }
+
     public static int readUserAge() {
+        LOG.info("\nEnter an age of the student:");
         int age = readInt();
         while (age < 16 | age > 40) {
             LOG.info("\nAge should be among 16 and 40 years:");
@@ -83,24 +93,14 @@ public class UserInput {
         return age;
     }
 
-    public static Date readEntryDate() {
-        LOG.info("\nEnter a date of entering courses in a format yyyy-MM-dd:");
-        Date entryDate = null;
-        boolean correctDate;
+    public static Date readDate() {
+        String dateString;
         do {
-            String dateString = UserInput.readString();
-            try {
-                entryDate = DateUtil.createDate(dateString);
-                correctDate = true;
-            } catch (ParseException e) {
-                LOG.info("\nEnter a correct date in a format yyyy-MM-dd:");
-                correctDate = false;
-            }
-        } while (!correctDate);
-        return entryDate;
+            LOG.info("\nEnter a date of entering courses in a format dd-MM-yyyy:");
+            dateString = UserInput.readString();     
+        }  while (Validator.isNotValid(dateString, DATE_PATTERN));
+        return  DateUtil.createDate(dateString);
     }
-
-
 
     public static int getGradeForSubjectMenu(String subject, int maxGrade) {
         int gradeValue;
@@ -110,8 +110,6 @@ public class UserInput {
         } while (gradeValue < 0 || gradeValue > maxGrade);
         return gradeValue;
     }
-
-
 
     public static boolean yesOrNotMenu() {
         String[] yesNotMenu = {"Yes", "Not"};
@@ -123,31 +121,11 @@ public class UserInput {
         return userChoice == 0;
     }
 
-
-
-    public static int readInt() {
-        String line;
-        do {
-            try {
-                line = READER.readLine().trim();
-            } catch (IOException e) {
-                LOG.info("\nData is not correct.");
-                throw new RuntimeException(e);
-            }
-        } while (!StringUtils.isNumeric(line));
-        return Integer.parseInt(line);
-    }
-
-
     public static double readDouble() {
         String line;
         do {
-            try {
-                line = READER.readLine().trim();
-                line = line.replace(",", ".");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            line = readFromConsole();
+            line = line.replace(",", ".");
         } while (!StringUtils.isNumeric(line));
         return Double.parseDouble(line);
     }
@@ -155,14 +133,28 @@ public class UserInput {
     public static String readString() {
         String line;
         do {
-            try {
-                line = READER.readLine();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            line = readFromConsole();
         } while (line.isEmpty());
         return line;
     }
 
+    private static int readInt() {
+        String line;
+        do {
+            line = readFromConsole();
+        } while (!StringUtils.isNumeric(line));
+        return Integer.parseInt(line);
+    }
+
+    private static String readFromConsole() {
+        String line;
+        try {
+            line = READER.readLine().trim();
+            LOG.debug("\nSomething went wrong. Try again.");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return line;
+    }
 
 }

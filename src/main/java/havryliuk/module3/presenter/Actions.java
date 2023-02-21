@@ -18,6 +18,7 @@ public enum Actions {
             new FindStudentsWithAvgGradeAbove()),
     GET_WORST_GRADED_SUBJECT("Find the worst graded subject", new ShowWorstGradedSubject()),
     GET_BEST_GRADED_SUBJECT("Find the best graded subject", new ShowBestGradedSubject()),
+    SHOW_ALL_STUDENTS("Show all students", new ShowAllStudents()),
     CREATE_NEW_STUDENT("Create new student", new CreateNewStudent()),
     EXIT("End the program", new EndProgram());
 

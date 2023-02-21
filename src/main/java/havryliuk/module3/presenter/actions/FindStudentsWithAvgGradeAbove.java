@@ -15,8 +15,8 @@ public class FindStudentsWithAvgGradeAbove implements Action {
     @Override
     public void execute(Service service) {
         LOG.info("\nEnter the grade:");
-        double grade = UserInput.readDouble();
-        List<StudentDTO> students = service.getStudentsWithAvgGradeAbove(grade);
+        final double grade = UserInput.readDouble();
+        final List<StudentDTO> students = service.getStudentsWithAvgGradeAbove(grade);
         if (students.size() > 1) {
             LOG.info("\nFound the following students with score above {}: \n{}", grade, students);
             UserInput.subMenu();

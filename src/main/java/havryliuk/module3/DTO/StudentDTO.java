@@ -7,7 +7,6 @@ import java.util.Date;
 import java.util.Formatter;
 
 @Getter
-
 @AllArgsConstructor
 public class StudentDTO {
     private String id;

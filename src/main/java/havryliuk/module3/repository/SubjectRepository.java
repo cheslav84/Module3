@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class SubjectRepository {
-    private enum SortingType {ASC, DESC};
+    private enum SortingType {ASC, DESC}
 
     public List<Subject> getAll() {
         EntityManager entityManager = HibernateFactoryUtil.getEntityManager();

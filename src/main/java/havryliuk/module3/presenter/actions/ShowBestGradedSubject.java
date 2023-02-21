@@ -14,7 +14,7 @@ public class ShowBestGradedSubject implements Action {
 
     @Override
     public void execute(Service service) {
-        Optional<GradeDTO> grade = service.getBestGradedSubject();
+        final Optional<GradeDTO> grade = service.getBestGradedSubject();
         grade.ifPresentOrElse(g -> LOG.info("\nThe worst graded subject with grade: \n{}",g),
                 () -> LOG.info("\nNo one subject has been found."));
         UserInput.subMenu();

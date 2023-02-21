@@ -17,6 +17,6 @@ public class GradeDTO {
         return "Subject: " + name
                 + "; with average grade = "
                 + new Formatter().format("%.2f", averageGrade)
-                + "\n";
+                + " points \n";
     }
 }

@@ -60,4 +60,8 @@ public class Service {
         personRepository.save(student);
     }
 
+    public List<Student> getAllStudents() {
+        return personRepository.getAllStudents();
+    }
+
 }

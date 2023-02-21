@@ -15,8 +15,8 @@ public class FindGroupByPartOfName implements Action {
     @Override
     public void execute(Service service) {
         LOG.info("\nEnter the name of group (whole name of part of it):");
-        String groupName = UserInput.readString();
-        List<Group> groups = service.getGroupByPartOfName(groupName);
+        final String groupName = UserInput.readString();
+        final List<Group> groups = service.getGroupByPartOfName(groupName);
         if (groups.size() > 1) {
             LOG.info("\nFound the following groups: \n{}", groups);
             UserInput.subMenu();

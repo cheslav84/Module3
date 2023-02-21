@@ -1,5 +1,6 @@
 package havryliuk.module3.entity;
 
+import havryliuk.module3.util.DateUtil;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.OnDelete;
@@ -13,7 +14,6 @@ import java.util.Set;
 @Setter
 @SuperBuilder
 @AllArgsConstructor
-@ToString(callSuper=true)
 @Entity
 public class Student extends Person {
 
@@ -24,7 +24,6 @@ public class Student extends Person {
     @JoinColumn(name = "class_id")
     private Group group;
 
-    @ToString.Exclude
     @OnDelete(action = OnDeleteAction.CASCADE)
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Grade> grades;
@@ -33,13 +32,16 @@ public class Student extends Person {
         super();
     }
 
-//    @Builder
-//    public Student(String id, String name, String surname, int age, Date entryDate, Group group, Set<Grade> grades) {
-//        super(id, name, surname, age);
-//        this.entryDate = entryDate;
-//        this.group = group;
-//        this.grades = grades;
-//    }
+    @Override
+    public String toString() {
+        return "Student's name: " + super.getName()
+                + "; surname: " + super.getSurname()
+                + "; age: " +  super.getAge()
+                + "; date of entry: " + DateUtil.formatDate(entryDate)
+                + "; group: " + group.getName()
+                + "\n";
+    }
+
 
 
 }

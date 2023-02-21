@@ -14,7 +14,7 @@ public class ShowStudentsAmountByGroups implements Action {
 
     @Override
     public void execute(Service service) {
-        Map<String, Long> studentsAmountByGroups = service.getStudentCountsByGroups();
+        final Map<String, Long> studentsAmountByGroups = service.getStudentCountsByGroups();
         if (studentsAmountByGroups.size() > 1) {
             LOG.info("\nThere are following students amount in the groups: \n{}",
                     formatStudentsAmountByGroups(studentsAmountByGroups));
@@ -28,8 +28,8 @@ public class ShowStudentsAmountByGroups implements Action {
     }
 
     private String formatStudentsAmountByGroups (Map<String, Long> studentsAmountByGroups){
-        Iterator<Map.Entry<String, Long>> iterator = studentsAmountByGroups.entrySet().iterator();
-        StringBuilder builder = new StringBuilder();
+        final Iterator<Map.Entry<String, Long>> iterator = studentsAmountByGroups.entrySet().iterator();
+        final StringBuilder builder = new StringBuilder();
         while (iterator.hasNext()) {
             Map.Entry<String,Long> entry = iterator.next();
             builder.append("Group ")

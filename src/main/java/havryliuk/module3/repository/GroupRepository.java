@@ -5,25 +5,13 @@ import havryliuk.module3.entity.Group;
 import havryliuk.module3.util.HibernateFactoryUtil;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.criteria.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 public class GroupRepository {
 
-    public Optional<Group> getByName(String name) {
-        final EntityManager entityManager = HibernateFactoryUtil.getEntityManager();
-        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Group> criteriaQuery = criteriaBuilder.createQuery(Group.class);
-        Root<Group> groupRoot = criteriaQuery.from(Group.class);
-        criteriaQuery.select(groupRoot);
-        criteriaQuery.where(criteriaBuilder.equal(groupRoot.get("name"), name));
-        Group group = entityManager.createQuery(criteriaQuery).getSingleResult();
-        return Optional.of(group);
-    }
 
     public List<Group> getAll() {
         EntityManager entityManager = HibernateFactoryUtil.getEntityManager();
@@ -58,7 +46,6 @@ public class GroupRepository {
     }
 
 
-    @SuppressWarnings("unchecked")
     public List<GradeDTO> getGroupsAverageGrade() {
         final EntityManager entityManager = HibernateFactoryUtil.getEntityManager();
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
@@ -69,8 +56,7 @@ public class GroupRepository {
         Expression<Double> avg = criteriaBuilder.avg(grades.get("value"));
         criteriaQuery.multiselect(group.get("id"), group.get("name"), avg);
         criteriaQuery.groupBy(group.get("id"), group.get("name"));
-        List<GradeDTO> groupsGrades = entityManager.createQuery(criteriaQuery).getResultList();
-        return groupsGrades;
+        return entityManager.createQuery(criteriaQuery).getResultList();
     }
 
     private Map<String, ? extends Number> mapResult(List<Object[]> resultList) {

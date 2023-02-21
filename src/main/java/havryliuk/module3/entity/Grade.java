@@ -22,7 +22,6 @@ public class Grade implements UniversityEntity {
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
-
     @ManyToOne
     @JoinColumn(name = "student_id")
     private Student student;

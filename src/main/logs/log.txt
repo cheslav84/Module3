@@ -1261,3 +1261,615 @@ Enter the grade for Web Design from 0 to 10
 2023-02-21 00:51:11 INFO  UserInput:30 - 6 Find the best graded subject
 2023-02-21 00:51:11 INFO  UserInput:30 - 7 Create new student
 2023-02-21 00:51:11 INFO  UserInput:30 - 8 End the program
+2023-02-21 01:20:04 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:20:04 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 01:20:04 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 01:20:04 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 01:20:04 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 01:20:04 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 01:20:04 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 01:20:04 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 01:20:04 INFO  UserInput:30 - 7 Show all students
+2023-02-21 01:20:04 INFO  UserInput:30 - 8 Create new student
+2023-02-21 01:20:04 INFO  UserInput:30 - 9 End the program
+2023-02-21 01:20:09 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student(super=Person(name=Джеккі, surname=Чан, age=38), entryDate=2022-10-16 00:00:00.0, group=Group: A-Level
+), Student(super=Person(name=Джейсон, surname=Стейтем, age=40), entryDate=2022-10-16 00:00:00.0, group=Group: A-Level
+), Student(super=Person(name=Мілла, surname=Йовович, age=18), entryDate=2022-10-16 00:00:00.0, group=Group: A-Level
+), Student(super=Person(name=Джулія, surname=Робертс, age=22), entryDate=2022-09-16 00:00:00.0, group=Group: A-Level
+), Student(super=Person(name=Він, surname=Дизель, age=27), entryDate=2021-09-17 00:00:00.0, group=Group: B-Level
+), Student(super=Person(name=Піт, surname=Бред, age=25), entryDate=2021-09-17 00:00:00.0, group=Group: B-Level
+), Student(super=Person(name=Лотнер, surname=Тейлор, age=24), entryDate=2021-09-17 00:00:00.0, group=Group: B-Level
+), Student(super=Person(name=Траволта, surname=Джон, age=50), entryDate=2020-10-18 00:00:00.0, group=Group: A-Degree
+), Student(super=Person(name=Расселл, surname=Кроу, age=50), entryDate=2020-10-18 00:00:00.0, group=Group: A-Degree
+), Student(super=Person(name=Двейн, surname=Джонсон, age=37), entryDate=2020-10-18 00:00:00.0, group=Group: A-Degree
+), Student(super=Person(name=Кідман, surname=Ніколь, age=35), entryDate=2020-10-18 00:00:00.0, group=Group: A-Degree
+)]
+2023-02-21 01:20:09 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:20:09 INFO  UserInput:30 - 0 Main menu
+2023-02-21 01:20:09 INFO  UserInput:30 - 1 Exit
+2023-02-21 01:23:09 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:23:09 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 01:23:09 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 01:23:09 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 01:23:09 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 01:23:09 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 01:23:09 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 01:23:09 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 01:23:09 INFO  UserInput:30 - 7 Show all students
+2023-02-21 01:23:09 INFO  UserInput:30 - 8 Create new student
+2023-02-21 01:23:09 INFO  UserInput:30 - 9 End the program
+2023-02-21 01:25:57 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:25:57 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 01:25:57 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 01:25:57 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 01:25:57 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 01:25:57 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 01:25:57 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 01:25:57 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 01:25:57 INFO  UserInput:30 - 7 Show all students
+2023-02-21 01:25:57 INFO  UserInput:30 - 8 Create new student
+2023-02-21 01:25:57 INFO  UserInput:30 - 9 End the program
+2023-02-21 01:26:05 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 01:26:05 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:26:05 INFO  UserInput:30 - 0 Main menu
+2023-02-21 01:26:05 INFO  UserInput:30 - 1 Exit
+2023-02-21 01:27:35 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:27:35 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 01:27:35 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 01:27:35 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 01:27:35 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 01:27:35 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 01:27:35 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 01:27:35 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 01:27:35 INFO  UserInput:30 - 7 Show all students
+2023-02-21 01:27:35 INFO  UserInput:30 - 8 Create new student
+2023-02-21 01:27:35 INFO  UserInput:30 - 9 End the program
+2023-02-21 01:27:51 INFO  ShowAllStudents:19 - 
+Found the following students 
+[[!!!havryliuk.module3.entity.Student@30bbcf91=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@5729b410=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@64518270=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@3b7c58e7=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@79627d27=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@6371cf2f=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@b5b9333=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@52b959df=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@38588dea=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@553d2579=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!], [!!!havryliuk.module3.entity.Student@2a8f6e6=>org.hibernate.InstantiationException:No default constructor for entity:  : havryliuk.module3.entity.Grade!!!]]
+2023-02-21 01:27:51 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:27:51 INFO  UserInput:30 - 0 Main menu
+2023-02-21 01:27:51 INFO  UserInput:30 - 1 Exit
+2023-02-21 01:29:09 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:29:09 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 01:29:09 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 01:29:09 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 01:29:09 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 01:29:09 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 01:29:09 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 01:29:09 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 01:29:09 INFO  UserInput:30 - 7 Show all students
+2023-02-21 01:29:09 INFO  UserInput:30 - 8 Create new student
+2023-02-21 01:29:09 INFO  UserInput:30 - 9 End the program
+2023-02-21 01:29:13 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 01:29:13 INFO  UserInput:28 - Choose the option: 
+2023-02-21 01:29:13 INFO  UserInput:30 - 0 Main menu
+2023-02-21 01:29:13 INFO  UserInput:30 - 1 Exit
+2023-02-21 02:03:42 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:03:42 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 02:03:42 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 02:03:42 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 02:03:42 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 02:03:42 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 02:03:42 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 02:03:42 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 02:03:42 INFO  UserInput:30 - 7 Show all students
+2023-02-21 02:03:42 INFO  UserInput:30 - 8 Create new student
+2023-02-21 02:03:42 INFO  UserInput:30 - 9 End the program
+2023-02-21 02:03:47 INFO  ShowAllStudents:20 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 02:04:41 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:04:41 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 02:04:41 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 02:04:41 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 02:04:41 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 02:04:41 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 02:04:41 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 02:04:41 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 02:04:41 INFO  UserInput:30 - 7 Show all students
+2023-02-21 02:04:41 INFO  UserInput:30 - 8 Create new student
+2023-02-21 02:04:41 INFO  UserInput:30 - 9 End the program
+2023-02-21 02:04:45 INFO  ShowAllStudents:20 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 02:06:42 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:06:42 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 02:06:42 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 02:06:42 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 02:06:42 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 02:06:42 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 02:06:42 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 02:06:42 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 02:06:42 INFO  UserInput:30 - 7 Show all students
+2023-02-21 02:06:42 INFO  UserInput:30 - 8 Create new student
+2023-02-21 02:06:42 INFO  UserInput:30 - 9 End the program
+2023-02-21 02:06:45 INFO  ShowAllStudents:20 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 02:06:45 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:06:45 INFO  UserInput:30 - 0 Main menu
+2023-02-21 02:06:45 INFO  UserInput:30 - 1 Exit
+2023-02-21 02:08:54 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:08:54 INFO  UserInput:30 - 0 Find student's group
+2023-02-21 02:08:54 INFO  UserInput:30 - 1 Show group's average grades
+2023-02-21 02:08:54 INFO  UserInput:30 - 2 Show students amount by groups
+2023-02-21 02:08:54 INFO  UserInput:30 - 3 Find mentors by name or surname
+2023-02-21 02:08:54 INFO  UserInput:30 - 4 Find students with average grade above defined value
+2023-02-21 02:08:54 INFO  UserInput:30 - 5 Find the worst graded subject
+2023-02-21 02:08:54 INFO  UserInput:30 - 6 Find the best graded subject
+2023-02-21 02:08:54 INFO  UserInput:30 - 7 Show all students
+2023-02-21 02:08:54 INFO  UserInput:30 - 8 Create new student
+2023-02-21 02:08:54 INFO  UserInput:30 - 9 End the program
+2023-02-21 02:08:59 INFO  ShowAllStudents:20 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 2022-10-16; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 2022-10-16; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 2022-09-16; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 2021-09-17; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 2021-09-17; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 2021-09-17; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 2020-10-18; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 2020-10-18; group: A-Degree
+]
+2023-02-21 02:08:59 INFO  UserInput:28 - Choose the option: 
+2023-02-21 02:08:59 INFO  UserInput:30 - 0 Main menu
+2023-02-21 02:08:59 INFO  UserInput:30 - 1 Exit
+2023-02-21 02:42:02 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 02:42:02 INFO  UserInput:30 - Choose the option: 
+2023-02-21 02:42:02 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 02:42:02 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 02:42:02 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 02:42:02 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 02:42:02 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 02:42:02 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 02:42:02 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 02:42:02 INFO  UserInput:32 - 7 Show all students
+2023-02-21 02:42:02 INFO  UserInput:32 - 8 Create new student
+2023-02-21 02:42:02 INFO  UserInput:32 - 9 End the program
+2023-02-21 02:42:08 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 16-10-2022; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 16-09-2022; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 17-09-2021; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 17-09-2021; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 17-09-2021; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 18-10-2020; group: A-Degree
+]
+2023-02-21 02:42:08 INFO  UserInput:30 - Choose the option: 
+2023-02-21 02:42:08 INFO  UserInput:32 - 0 Main menu
+2023-02-21 02:42:08 INFO  UserInput:32 - 1 Exit
+2023-02-21 02:48:27 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 02:48:27 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:48:27 INFO  UserInput:33 - 0 Find student's group
+2023-02-21 02:48:27 INFO  UserInput:33 - 1 Show group's average grades
+2023-02-21 02:48:27 INFO  UserInput:33 - 2 Show students amount by groups
+2023-02-21 02:48:27 INFO  UserInput:33 - 3 Find mentors by name or surname
+2023-02-21 02:48:27 INFO  UserInput:33 - 4 Find students with average grade above defined value
+2023-02-21 02:48:27 INFO  UserInput:33 - 5 Find the worst graded subject
+2023-02-21 02:48:27 INFO  UserInput:33 - 6 Find the best graded subject
+2023-02-21 02:48:27 INFO  UserInput:33 - 7 Show all students
+2023-02-21 02:48:27 INFO  UserInput:33 - 8 Create new student
+2023-02-21 02:48:27 INFO  UserInput:33 - 9 End the program
+2023-02-21 02:48:32 INFO  UserInput:80 - 
+Enter a name of the student:
+2023-02-21 02:48:47 INFO  UserInput:80 - 
+Enter a surname of the student:
+2023-02-21 02:48:51 INFO  UserInput:90 - 
+Enter an age of the student:
+2023-02-21 02:48:56 INFO  UserInput:93 - 
+Age should be among 16 and 40 years:
+2023-02-21 02:49:03 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 02:49:03 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:49:03 INFO  UserInput:33 - 0 Find student's group
+2023-02-21 02:49:03 INFO  UserInput:33 - 1 Show group's average grades
+2023-02-21 02:49:03 INFO  UserInput:33 - 2 Show students amount by groups
+2023-02-21 02:49:03 INFO  UserInput:33 - 3 Find mentors by name or surname
+2023-02-21 02:49:03 INFO  UserInput:33 - 4 Find students with average grade above defined value
+2023-02-21 02:49:03 INFO  UserInput:33 - 5 Find the worst graded subject
+2023-02-21 02:49:03 INFO  UserInput:33 - 6 Find the best graded subject
+2023-02-21 02:49:03 INFO  UserInput:33 - 7 Show all students
+2023-02-21 02:49:03 INFO  UserInput:33 - 8 Create new student
+2023-02-21 02:49:03 INFO  UserInput:33 - 9 End the program
+2023-02-21 02:49:08 INFO  UserInput:80 - 
+Enter a name of the student:
+2023-02-21 02:49:10 INFO  UserInput:83 - 
+Data should be from 2 to 24 letters long, and contains only letters and signs ' and -
+2023-02-21 02:49:45 INFO  UserInput:80 - 
+Enter a surname of the student:
+2023-02-21 02:49:49 INFO  UserInput:90 - 
+Enter an age of the student:
+2023-02-21 02:49:55 INFO  UserInput:100 - 
+Enter a date of entering courses in a format dd-MM-yyyy:
+2023-02-21 02:50:01 INFO  UserInput:107 - 
+Enter correct date of entering courses in a format dd-MM-yyyy:
+2023-02-21 02:50:20 INFO  UserInput:107 - 
+Enter correct date of entering courses in a format dd-MM-yyyy:
+2023-02-21 02:50:33 INFO  UserInput:66 - 
+Choose a group for the student:
+2023-02-21 02:50:33 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:50:33 INFO  UserInput:33 - 0 A-Level
+2023-02-21 02:50:33 INFO  UserInput:33 - 1 B-Level
+2023-02-21 02:50:33 INFO  UserInput:33 - 2 A-Degree
+2023-02-21 02:50:41 INFO  CreateNewStudent:49 - 
+Do you want to set grades for student?
+2023-02-21 02:50:41 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:50:41 INFO  UserInput:33 - 0 Yes
+2023-02-21 02:50:41 INFO  UserInput:33 - 1 Not
+2023-02-21 02:50:52 INFO  CreateNewStudent:60 - 
+Do you want to set Java grade?
+2023-02-21 02:50:52 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:50:52 INFO  UserInput:33 - 0 Yes
+2023-02-21 02:50:52 INFO  UserInput:33 - 1 Not
+2023-02-21 02:51:03 INFO  UserInput:129 - 
+Enter the grade for Java from 0 to 10
+2023-02-21 02:51:10 INFO  CreateNewStudent:60 - 
+Do you want to set Testing grade?
+2023-02-21 02:51:10 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:51:10 INFO  UserInput:33 - 0 Yes
+2023-02-21 02:51:10 INFO  UserInput:33 - 1 Not
+2023-02-21 02:51:12 INFO  UserInput:129 - 
+Enter the grade for Testing from 0 to 10
+2023-02-21 02:51:15 INFO  CreateNewStudent:60 - 
+Do you want to set Web Design grade?
+2023-02-21 02:51:15 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:51:15 INFO  UserInput:33 - 0 Yes
+2023-02-21 02:51:15 INFO  UserInput:33 - 1 Not
+2023-02-21 02:51:23 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:51:23 INFO  UserInput:33 - 0 Find student's group
+2023-02-21 02:51:23 INFO  UserInput:33 - 1 Show group's average grades
+2023-02-21 02:51:23 INFO  UserInput:33 - 2 Show students amount by groups
+2023-02-21 02:51:23 INFO  UserInput:33 - 3 Find mentors by name or surname
+2023-02-21 02:51:23 INFO  UserInput:33 - 4 Find students with average grade above defined value
+2023-02-21 02:51:23 INFO  UserInput:33 - 5 Find the worst graded subject
+2023-02-21 02:51:23 INFO  UserInput:33 - 6 Find the best graded subject
+2023-02-21 02:51:23 INFO  UserInput:33 - 7 Show all students
+2023-02-21 02:51:23 INFO  UserInput:33 - 8 Create new student
+2023-02-21 02:51:23 INFO  UserInput:33 - 9 End the program
+2023-02-21 02:51:32 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 16-10-2022; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 16-09-2022; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 17-09-2021; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 17-09-2021; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 17-09-2021; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 18-10-2020; group: A-Degree
+, Student's name: John; surname: Snow; age: 25; date of entry: 10-12-2022; group: B-Level
+]
+2023-02-21 02:51:32 INFO  UserInput:31 - Choose the option: 
+2023-02-21 02:51:32 INFO  UserInput:33 - 0 Main menu
+2023-02-21 02:51:32 INFO  UserInput:33 - 1 Exit
+2023-02-21 03:11:42 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 03:11:42 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:11:42 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:11:42 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:11:42 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:11:42 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:11:42 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:11:42 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:11:42 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:11:42 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:11:42 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:11:42 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:11:44 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 03:11:44 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:11:44 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:11:44 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:11:44 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:11:44 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:11:44 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:11:44 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:11:44 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:11:44 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:11:44 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:11:44 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:11:48 INFO  FindGroupByPartOfName:17 - 
+Enter the name of group (whole name of part of it):
+2023-02-21 03:11:52 DEBUG UserInput:153 - 
+Something went wrong. Try again.
+2023-02-21 03:11:53 INFO  FindGroupByPartOfName:27 - 
+Any of groups doesn't contains such name.
+2023-02-21 03:11:53 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:11:53 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:11:53 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:11:53 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:12:00 INFO  FindGroupByPartOfName:17 - 
+Enter the name of group (whole name of part of it):
+2023-02-21 03:12:02 DEBUG UserInput:153 - 
+Something went wrong. Try again.
+2023-02-21 03:12:02 INFO  FindGroupByPartOfName:21 - 
+Found the following groups: 
+[Group: A-Level
+, Group: A-Degree
+]
+2023-02-21 03:12:02 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:12:02 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:12:02 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:12:18 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:12:18 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:12:18 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:12:18 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:12:18 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:12:18 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:12:18 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:12:18 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:12:18 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:12:18 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:12:18 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:12:18 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:12:21 INFO  ShowGroupsAverageGrade:19 - 
+There are following average grades of groups: 
+[Subject: B-Level; with average grade = 8,18
+, Subject: A-Degree; with average grade = 8,08
+, Subject: A-Level; with average grade = 8,17
+]
+2023-02-21 03:12:21 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:12:21 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:12:21 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:13:16 DEBUG FindMentorsByNameOrSurname:12 - Program is started.
+2023-02-21 03:13:16 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:13:16 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:13:16 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:13:16 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:13:16 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:13:16 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:13:16 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:13:16 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:13:16 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:13:16 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:13:16 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:13:21 INFO  ShowGroupsAverageGrade:19 - 
+There are following average grades of groups: 
+[Subject: B-Level; with average grade = 8,18 points 
+, Subject: A-Degree; with average grade = 8,08 points 
+, Subject: A-Level; with average grade = 8,17 points 
+]
+2023-02-21 03:13:21 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:13:21 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:13:21 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:13:31 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:13:31 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:13:31 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:13:31 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:13:31 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:13:31 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:13:31 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:13:31 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:13:31 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:13:31 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:13:31 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:13:31 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:13:35 INFO  ShowStudentsAmountByGroups:19 - 
+There are following students amount in the groups: 
+Group A-Level has 4 student(s)
+Group A-Degree has 4 student(s)
+Group B-Level has 4 student(s)
+
+2023-02-21 03:13:35 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:13:35 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:13:35 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:13:49 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:13:49 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:13:49 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:13:49 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:13:49 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:13:49 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:13:49 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:13:49 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:13:49 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:13:49 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:13:49 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:13:49 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:13:51 INFO  FindMentorsByNameOrSurname:17 - 
+Enter the name or surname of mentor to find:
+2023-02-21 03:14:00 DEBUG UserInput:153 - 
+Something went wrong. Try again.
+2023-02-21 03:14:00 INFO  FindMentorsByNameOrSurname:27 - 
+There is no mentor with such name or surname.
+2023-02-21 03:14:00 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:14:00 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:14:00 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:14:00 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:14:08 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:14:08 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:14:08 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:14:08 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:14:13 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:14:13 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:14:13 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:14:13 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:14:22 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:14:22 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:14:22 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:14:22 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:14:30 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:14:30 INFO  UserInput:32 - 0 Try again
+2023-02-21 03:14:30 INFO  UserInput:32 - 1 Main menu
+2023-02-21 03:14:30 INFO  UserInput:32 - 2 Exit
+2023-02-21 03:15:56 INFO  FindMentorsByNameOrSurname:17 - 
+Enter the name or surname of mentor to find:
+2023-02-21 03:16:04 DEBUG UserInput:153 - 
+Something went wrong. Try again.
+2023-02-21 03:16:04 INFO  FindMentorsByNameOrSurname:24 - 
+Found the mentor by your request: 
+Mentor's name: Чак; surname: Норіс; age: 64; taught subject: Testing
+
+2023-02-21 03:16:04 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:04 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:16:04 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:16:14 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:16:14 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:14 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:16:14 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:16:14 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:16:14 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:16:14 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:16:14 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:16:14 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:16:14 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:16:14 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:16:14 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:16:19 INFO  FindStudentsWithAvgGradeAbove:17 - 
+Enter the grade:
+2023-02-21 03:16:22 DEBUG UserInput:153 - 
+Something went wrong. Try again.
+2023-02-21 03:16:22 INFO  FindStudentsWithAvgGradeAbove:21 - 
+Found the following students with score above 8.0: 
+[Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 17-09-2021; average grade: 8,67
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 18-10-2020; average grade: 9,33
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 18-10-2020; average grade: 8,33
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 17-09-2021; average grade: 8,33
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 16-10-2022; average grade: 9,00
+]
+2023-02-21 03:16:22 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:22 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:16:22 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:16:30 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:16:30 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:30 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:16:30 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:16:30 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:16:30 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:16:30 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:16:30 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:16:30 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:16:30 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:16:30 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:16:30 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:16:35 INFO  ShowWorstGradedSubject:18 - 
+The worst graded subject with grade: 
+Subject: Java; with average grade = 7,75 points 
+
+2023-02-21 03:16:35 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:35 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:16:35 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:16:50 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:16:50 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:16:50 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:16:50 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:16:50 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:16:50 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:16:50 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:16:50 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:16:50 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:16:50 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:16:50 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:16:50 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:17:03 INFO  ShowBestGradedSubject:18 - 
+The worst graded subject with grade: 
+Subject: Web Design; with average grade = 8,45 points 
+
+2023-02-21 03:17:03 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:17:03 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:17:03 INFO  UserInput:32 - 1 Exit
+2023-02-21 03:17:12 DEBUG UserInput:57 - 
+Going to main menu.
+2023-02-21 03:17:12 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:17:12 INFO  UserInput:32 - 0 Find student's group
+2023-02-21 03:17:12 INFO  UserInput:32 - 1 Show group's average grades
+2023-02-21 03:17:12 INFO  UserInput:32 - 2 Show students amount by groups
+2023-02-21 03:17:12 INFO  UserInput:32 - 3 Find mentors by name or surname
+2023-02-21 03:17:12 INFO  UserInput:32 - 4 Find students with average grade above defined value
+2023-02-21 03:17:12 INFO  UserInput:32 - 5 Find the worst graded subject
+2023-02-21 03:17:12 INFO  UserInput:32 - 6 Find the best graded subject
+2023-02-21 03:17:12 INFO  UserInput:32 - 7 Show all students
+2023-02-21 03:17:12 INFO  UserInput:32 - 8 Create new student
+2023-02-21 03:17:12 INFO  UserInput:32 - 9 End the program
+2023-02-21 03:17:15 INFO  ShowAllStudents:19 - 
+Found the following students 
+[Student's name: Джеккі; surname: Чан; age: 38; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джейсон; surname: Стейтем; age: 40; date of entry: 16-10-2022; group: A-Level
+, Student's name: Мілла; surname: Йовович; age: 18; date of entry: 16-10-2022; group: A-Level
+, Student's name: Джулія; surname: Робертс; age: 22; date of entry: 16-09-2022; group: A-Level
+, Student's name: Він; surname: Дизель; age: 27; date of entry: 17-09-2021; group: B-Level
+, Student's name: Піт; surname: Бред; age: 25; date of entry: 17-09-2021; group: B-Level
+, Student's name: Лотнер; surname: Тейлор; age: 24; date of entry: 17-09-2021; group: B-Level
+, Student's name: Траволта; surname: Джон; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Расселл; surname: Кроу; age: 50; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Двейн; surname: Джонсон; age: 37; date of entry: 18-10-2020; group: A-Degree
+, Student's name: Кідман; surname: Ніколь; age: 35; date of entry: 18-10-2020; group: A-Degree
+, Student's name: John; surname: Snow; age: 25; date of entry: 10-12-2022; group: B-Level
+]
+2023-02-21 03:17:15 INFO  UserInput:30 - Choose the option: 
+2023-02-21 03:17:15 INFO  UserInput:32 - 0 Main menu
+2023-02-21 03:17:15 INFO  UserInput:32 - 1 Exit

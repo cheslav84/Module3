@@ -7,7 +7,6 @@ import havryliuk.module3.entity.Subject;
 import havryliuk.module3.presenter.Action;
 import havryliuk.module3.presenter.UserInput;
 import havryliuk.module3.service.Service;
-import havryliuk.module3.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,17 +21,14 @@ public class CreateNewStudent implements Action {
 
     @Override
     public void execute(Service service) {
-        LOG.info("\nEnter a name of the student:");
-        String name = UserInput.readString();
-        LOG.info("\nEnter a surname of the student:");
-        String surname = UserInput.readString();
-        LOG.info("\nEnter an age of the student:");
-        int age = UserInput.readUserAge();
-        Date entryDate = UserInput.readEntryDate();
-        List<Group> groups = service.getAllGroups();
-        Group group = UserInput.groupChoosingMenu(groups);
-        Set<Grade> grades = new HashSet<>();
-        Student student = Student.builder()
+        final String name = UserInput.readName("name");
+        final String surname = UserInput.readName("surname");
+        final int age = UserInput.readUserAge();
+        final Date entryDate = UserInput.readDate();
+        final List<Group> groups = service.getAllGroups();
+        final Group group = UserInput.groupChoosingMenu(groups);
+        final Set<Grade> grades = new HashSet<>();
+        final Student student = Student.builder()
                 .entryDate(entryDate)
                 .name(name)
                 .surname(surname)
@@ -68,6 +64,5 @@ public class CreateNewStudent implements Action {
             grades.add(grade);
         }
     }
-
 
 }

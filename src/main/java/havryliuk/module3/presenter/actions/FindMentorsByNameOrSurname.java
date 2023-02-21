@@ -15,8 +15,8 @@ public class FindMentorsByNameOrSurname implements Action {
     @Override
     public void execute(Service service) {
         LOG.info("\nEnter the name or surname of mentor to find:");
-        String mentorName = UserInput.readString();
-        List<Mentor> mentors = service.getMentorsByNameOrSurname(mentorName);
+        final String mentorName = UserInput.readString();
+        final List<Mentor> mentors = service.getMentorsByNameOrSurname(mentorName);
         if (mentors.size() > 1) {
             LOG.info("\nFound the following mentors: \n{}", mentors);
             UserInput.subMenu();
