@@ -1,4 +1,4 @@
-package havryliuk.module3.DTO;
+package havryliuk.module3.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package havryliuk.module3.DTO;
+package havryliuk.module3.dto;
 
 import havryliuk.module3.util.DateUtil;
 import lombok.*;

@@ -1,6 +1,6 @@
 package havryliuk.module3.repository;
 
-import havryliuk.module3.DTO.StudentDTO;
+import havryliuk.module3.dto.StudentDTO;
 
 import havryliuk.module3.entity.Mentor;
 import havryliuk.module3.entity.Person;

@@ -1,7 +1,7 @@
 package havryliuk.module3.service;
 
-import havryliuk.module3.DTO.GradeDTO;
-import havryliuk.module3.DTO.StudentDTO;
+import havryliuk.module3.dto.GradeDTO;
+import havryliuk.module3.dto.StudentDTO;
 import havryliuk.module3.entity.Group;
 import havryliuk.module3.entity.Mentor;
 import havryliuk.module3.entity.Student;

@@ -130,11 +130,11 @@
 2023-02-20 21:38:55 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
 2023-02-20 21:38:56 INFO  access:48 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6397248c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2023-02-20 21:38:56 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-02-20 21:39:01 ERROR ErrorTracker:62 -  Unable to locate appropriate constructor on class [havryliuk.module3.DTO.GradeDTO]. Expected arguments are: java.lang.String, double
-[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: havryliuk.module3.DTO.GradeDTO]
-2023-02-20 21:39:01 ERROR ErrorTracker:57 -  Unable to locate appropriate constructor on class [havryliuk.module3.DTO.GradeDTO]. Expected arguments are: java.lang.String, double
-[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: havryliuk.module3.DTO.GradeDTO]
-org.hibernate.hql.internal.ast.DetailedSemanticException: Unable to locate appropriate constructor on class [havryliuk.module3.DTO.GradeDTO]. Expected arguments are: java.lang.String, double
+2023-02-20 21:39:01 ERROR ErrorTracker:62 -  Unable to locate appropriate constructor on class [havryliuk.module3.dto.GradeDTO]. Expected arguments are: java.lang.String, double
+[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: havryliuk.module3.dto.GradeDTO]
+2023-02-20 21:39:01 ERROR ErrorTracker:57 -  Unable to locate appropriate constructor on class [havryliuk.module3.dto.GradeDTO]. Expected arguments are: java.lang.String, double
+[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: havryliuk.module3.dto.GradeDTO]
+org.hibernate.hql.internal.ast.DetailedSemanticException: Unable to locate appropriate constructor on class [havryliuk.module3.dto.GradeDTO]. Expected arguments are: java.lang.String, double
 	at org.hibernate.hql.internal.ast.tree.ConstructorNode.resolveConstructor(ConstructorNode.java:182) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
 	at org.hibernate.hql.internal.ast.tree.ConstructorNode.prepare(ConstructorNode.java:144) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
 	at org.hibernate.hql.internal.ast.HqlSqlWalker.processConstructor(HqlSqlWalker.java:1271) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
@@ -578,3 +578,15 @@ org.hibernate.hql.internal.ast.DetailedSemanticException: Unable to locate appro
 2023-02-21 03:13:21 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: havryliuk.module3.entity.Grade (class must be instantiated by Interceptor)
 2023-02-21 03:13:21 INFO  access:48 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4dadd690] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2023-02-21 03:13:21 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-23 01:17:12 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: persistence]
+2023-02-23 01:17:12 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-23 01:17:13 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-23 01:17:13 WARN  pooling:75 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-02-23 01:17:13 INFO  pooling:119 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/courses]
+2023-02-23 01:17:13 INFO  pooling:128 - HHH10001001: Connection properties: {password=****, user=postgres}
+2023-02-23 01:17:13 INFO  pooling:132 - HHH10001003: Autocommit mode: false
+2023-02-23 01:17:13 INFO  DriverManagerConnectionProviderImpl:322 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-02-23 01:17:13 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-02-23 01:17:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: havryliuk.module3.entity.Grade (class must be instantiated by Interceptor)
+2023-02-23 01:17:13 INFO  access:48 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5a058be5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-02-23 01:17:14 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
