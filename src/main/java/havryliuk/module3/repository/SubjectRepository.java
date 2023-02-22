@@ -1,6 +1,6 @@
 package havryliuk.module3.repository;
 
-import havryliuk.module3.DTO.GradeDTO;
+import havryliuk.module3.dto.GradeDTO;
 import havryliuk.module3.entity.*;
 import havryliuk.module3.util.HibernateFactoryUtil;
 

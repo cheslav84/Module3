@@ -11,7 +11,6 @@ public class Main {
     public static void main(String[] args) {
         LOG.debug("Program is started.");
         Service service = new Service();
-
         final Actions[] actions = Actions.values();
         final String[] actionNames = Actions.mapAction();
 

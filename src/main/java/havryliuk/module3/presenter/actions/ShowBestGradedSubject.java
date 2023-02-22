@@ -1,6 +1,6 @@
 package havryliuk.module3.presenter.actions;
 
-import havryliuk.module3.DTO.GradeDTO;
+import havryliuk.module3.dto.GradeDTO;
 import havryliuk.module3.presenter.Action;
 import havryliuk.module3.presenter.UserInput;
 import havryliuk.module3.service.Service;
